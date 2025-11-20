@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: spring-boot-service
 spec:
-  type: NodePort
+  type: LoadBalancer  # Changed from NodePort
   selector:
     app: my-spring-boot-app
   ports:
     - protocol: TCP
-      port: 8080           # Port sur lequel ton application écoute dans le conteneur
-      targetPort: 8080      # Port exposé vers ton application
-      nodePort: 30000       # Port exposé sur le nœud Kubernetes (entre 30000 et 32767)
+      port: 80           # External port
+      targetPort: 8080   # Your app port
