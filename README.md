@@ -306,7 +306,7 @@ Contributions are welcome! Please follow these steps:
 
 ## 📝 License
 
-This project is part of an academic exercise at ESPRIT Tunisia.
+This project is part of an academic exercise at FST .
 
 ## 👥 Authors
 
